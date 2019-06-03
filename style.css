@@ -1,0 +1,82 @@
+.parent{
+	background: black;
+	height: 630px;
+	width: 900px;
+	font-family: Arial
+}
+img{
+	height: 330px
+}
+.display{
+	background: red;
+	height: 420px;
+	padding-top: 30px;
+	box-sizing: border-box; 
+	display: flex;
+}
+.asking{
+	height: 200px;
+	margin-top: 20px;
+}
+.help{
+	background: orange;
+	height: 70px;
+	width: 300px;
+	margin-left: 50px;
+	display: flex;
+	padding-top: 6px;
+	box-sizing: border-box;
+}
+.money{
+	background: green;
+	height: 350px;
+	width: 230px;
+	margin-left: 170px
+}
+.question{
+	background: purple;
+	height: 90px;
+
+}
+.fourbox{
+	background: pink;
+	height: 110px;
+	display: flex;
+	padding-top: 3px;
+	box-sizing: border-box;
+}
+.column{
+	
+	height: 90px;
+	width: 350px;
+	margin-left: 50px;
+}
+.column2{
+	
+	height: 90px;
+	width: 350px;
+	margin-left: 30px;
+}
+.ask{
+	background: gray;
+	height: 40px;
+	margin-top: 10px
+}
+.num{
+	background: cyan;
+	height: 16px;
+	margin-top: 7px;
+	
+}
+.choose{
+	background: yellow;
+	height: 60px;
+	width: 75px;
+	margin-left: 15px
+}
+.lose{
+	background: black;
+	height: 150px;
+	color: white;
+	width: 900px
+}

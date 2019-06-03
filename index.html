@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body> 
+	<div class="parent">
+		<div class="display">
+			<div class="flex">
+			<div class="help">
+				<div class="choose"> 50:50 </div>
+				<div class="choose"> Зал </div>
+				<div class="choose"> Звонок </div>
+
+			</div>
+				<img src="logo.png" alt="">
+		</div>
+			<div class="money">
+				<div class="num"> 15 3000000</div>
+				<div class="num"> 14 1000000</div>
+				<div class="num"> 13 800000</div>
+				<div class="num"> 12 400000</div>
+				<div class="num"> 11 200000</div>
+				<div class="num"> 10 100000</div>
+				<div class="num"> 9 50000</div>
+				<div class="num"> 8 25000</div>
+				<div class="num"> 7 15000</div>
+				<div class="num"> 6 10000</div>
+				<div class="num"> 5 5000</div>
+				<div class="num"> 4 3000</div>
+				<div class="num"> 3 2000</div>
+				<div class="num"> 2 1000</div>
+				<div class="num"> 1 500</div>
+			</div>
+			
+		</div>
+		<div class="asking">
+			<div class="question"></div>
+			<div class="fourbox">
+				<div class="column">
+				<div class="ask a"></div>
+				<div class="ask b"></div>
+			</div>
+			<div class="column2">
+				<div class="ask c"></div>
+				<div class="ask d"></div>
+			</div>
+			</div>
+		</div>
+	</div>
+		<script>
+			let money = document.querySelectorAll('.num');
+			let question = document.querySelector('.question');
+			let box = document.querySelector('.asking');
+			let ask1 = document.querySelector('.a');
+			let ask2 = document.querySelector('.b');
+			let ask3 = document.querySelector('.c');
+			let ask4 = document.querySelector('.d');
+			let parent = document.querySelector('.parent')
+
+			question.innerHTML = ' Как звали старшую сестру императора Петра Первого?'
+			ask1.innerHTML = 'Вера';
+			ask2.innerHTML = 'Надежда';
+			ask3.innerHTML = 'Любовь';
+			ask4.innerHTML = 'Софья';
+			
+			ask4.onclick = function(){
+				question.innerHTML = 'Что не бывает морским?';
+				ask1.innerHTML = 'Рельс';
+				ask2.innerHTML = 'Огурец';
+				ask3.innerHTML = 'Гребешок';
+				ask4.innerHTML = 'Узел';
+
+				ask1.onclick = function(){
+					question.innerHTML = 'Кого с большим основанием можно назвать островитянами?';
+				ask1.innerHTML = 'алеутов';
+				ask2.innerHTML = 'эвенков';
+				ask3.innerHTML = 'чукчей';
+				ask4.innerHTML = 'якутов';
+				}
+				ask3.onclick = function(){
+				box.style.display = 'none';
+				parent.style.height = 450 + 'px';
+				let lose = document.createElement('div');
+				document.body.appendChild(lose);
+				lose.classList.add('lose');
+				lose.innerHTML = 'Ты проиграл!';
+			}
+			ask4.onclick = function(){
+				box.style.display = 'none';
+				parent.style.height = 450 + 'px';
+				let lose = document.createElement('div');
+				document.body.appendChild(lose);
+				lose.classList.add('lose');
+				lose.innerHTML = 'Ты проиграл!';
+			}
+			ask2.onclick = function(){
+				box.style.display = 'none';
+				parent.style.height = 450 + 'px';
+				let lose = document.createElement('div');
+				document.body.appendChild(lose);
+				lose.classList.add('lose');
+				lose.innerHTML = 'Ты проиграл!';
+			}
+			}
+			ask3.onclick = function(){
+				box.style.display = 'none';
+				parent.style.height = 450 + 'px';
+				let lose = document.createElement('div');
+				document.body.appendChild(lose);
+				lose.classList.add('lose');
+				lose.innerHTML = 'Ты проиграл!';
+			}
+			ask1.onclick = function(){
+				box.style.display = 'none';
+				parent.style.height = 450 + 'px';
+				let lose = document.createElement('div');
+				document.body.appendChild(lose);
+				lose.classList.add('lose');
+				lose.innerHTML = 'Ты проиграл!';
+			}
+			ask2.onclick = function(){
+				box.style.display = 'none';
+				parent.style.height = 450 + 'px';
+				let lose = document.createElement('div');
+				document.body.appendChild(lose);
+				lose.classList.add('lose');
+				lose.innerHTML = 'Ты проиграл!';
+			}
+
+		</script>
+	</body>
+</html>
